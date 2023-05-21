@@ -1,0 +1,12 @@
+---
+# defaults file for packages-install
+
+packages_to_install:
+  - vim
+  - tmux
+  - git
+  - mc
+  - pv
+  - python3.11
+  - python3.11-pip
+  - python3.11-pip-wheel

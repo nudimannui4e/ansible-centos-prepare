@@ -1,0 +1,14 @@
+- name: Ensure epel-release is installed
+  yum:
+    name: epel-release
+    state: present
+    update_cache: true
+  when: ansible_os_family == 'RedHat'
+
+- name: Install packages from default/main.yml
+  yum:
+    name: "{{ item }}"
+    state: latest
+  with_items:
+    - "{{ packages_to_install }}"
+  tags: package_install

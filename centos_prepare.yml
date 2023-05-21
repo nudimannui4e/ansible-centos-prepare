@@ -1,0 +1,8 @@
+---
+- name: prepare CentOS after install
+  hosts: "{{ var_host | default('all') }}"
+  become: yes
+  become_user: root
+  gather_facts: yes
+  roles:
+    - packages-install

@@ -1,0 +1,2 @@
+[vmbox]
+192.168.100.28 ansible_user=el
